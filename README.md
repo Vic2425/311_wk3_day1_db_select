@@ -35,25 +35,32 @@ Also, put the answers in the "Query Responses" section of this README.
 
 > *NOTE: The query instructions are intentionally written in plain english. It's up to you to translate that into a SELECT statement.*
 
-1. Select all fields from users where the city equals Chicago
+1. Select all fields from users where the city equals Chicago <br>
+   - SELECT * FROM users WHERE city = 'Chicago';
 
-2. Select the "state" field for users with a first name of "Glory"
+2. Select the "state" field for users with a first name of "Glory" <br>
+    - SELECT state FROM users WHERE first_name LIKE 'Glory';
 
-3. Select all fields from users whose phone1 starts with "773"
+3. Select all fields from users whose phone1 starts with "773" <br>
+    - SELECT * FROM users WHERE phone1 LIKE '773%';
 
 ## Query Responses
 
 1.
-  * How many rows were returned:
-  * First name of the first user:
-
+  * How many rows were returned: <br>
+    - 7 rows.
+  * First name of the first user: <br>
+    - Mitsue
 2.
-  * How many rows were returned:
-  * What states do they live in:
-
+  * How many rows were returned: <br>
+    - 2 rows.
+  * What states do they live in: <br>
+    - MD & TX.
 3.
-  * How many rows were returned:
-  * What's the last email on the list:
+  * How many rows were returned: <br>
+    - 6 rows.
+  * What's the last email on the list: <br>
+    - 'nichelle_meteer@meteer.com'
 
 ## Summary
 
